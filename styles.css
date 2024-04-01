@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+	}
+header {
+    background-color: orangered;
+	color: #fff;
+	text-align:center;
+	padding: 20px;
+	}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    }
+    nav ul li {
+        display: inline;
+        margin-right: 40px;
+        margin-left: 40px;
+        a:link, a:visited {
+            background-color: orangered;
+            color: black;
+            border: 2px solid black;
+            border-radius: 20;
+            padding: 2px 20px;
+            display: inline-block;
+            }
+          
+          a:hover, a:active {
+            background-color: black;
+            color: white;
+            }
+		}
+main {
+	padding: 20px;
+    }
+
+a {
+    color:black;
+    text-decoration: none;
+    }
+a:hover {
+    color:green;
+    }
+a:active{
+    color:blue;
+    }
+form {
+    position:relative; left:800px; bottom:300px;
+}
+    div.polaroid {
+		width: 35%;
+		background-color: white;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		margin-bottom: 25px;
+	  }
+	  div.container {
+		text-align: center;
+		padding: 10px 20px;
+	  }

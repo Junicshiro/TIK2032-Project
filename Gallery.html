@@ -4,32 +4,12 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Gallery</title>
+	<link rel="stylesheet" href="styles.css">
 	<style>
-		body {
-            		font-family: Arial, sans-serif;
-           		margin: 0;
-            		padding: 0;
+		.img {
+			display:flex;
+			justify-content:space-around;
 		}
-		header {
-			background-color: orangered;
-			color: #fff;
-			text-align:center;
-			padding: 20px;
-		}
-		nav ul {
-            		list-style-type: none;
-            		padding: 0;
-      		}
-      		nav ul li {
-            		display: inline;
-           		margin-right: 20px;
-		}
-		img {
-			margin:5px;
-		}
-		main {
-           		padding: 20px;
-      	}
 		
 	</style>
 </head>
@@ -40,16 +20,18 @@
 
 		<nav>
             <ul>
-               	<li><a href="index.html"style="color: blue;">Homepage</a></li>
-               	<li><a href="Blog.html"style="color: blue;">Blog</a></li>
-                <li><a href="Contact.html"style="color: blue;">Contact</a></li>
+               	<li><a href="index.html">Homepage</a></li>
+               	<li><a href="Blog.html">Blog</a></li>
+                <li><a href="Contact.html">Contact</a></li>
            	</ul>
         </nav>
 	</header>
 	<main>
-		<img src="img/pngtree-mountain-river-beautiful-nature-image_15576058.jpg" width="400px";height="400px";>
-		<img src="img/images%20(1).jfif" width="400px";height="400px";>
-		<img src="img/images.jfif" width="400px";height="400px";>
+		<div class="img">
+			<img src="img/pngtree-mountain-river-beautiful-nature-image_15576058.jpg" width="400px";height="400px";>
+			<img src="img/images%20(1).jfif" width="400px";height="400px";>
+			<img src="img/images.jfif" width="400px";height="400px";>
+		</div>
 	</main>
 
 </body>

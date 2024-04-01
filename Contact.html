@@ -4,31 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Contact</title>
-	<style>
-		body {
-            		font-family: Arial, sans-serif;
-           		margin: 0;
-            		padding: 0;
-		}
-		header {
-			background-color: orangered;
-			color: #fff;
-			text-align:center;
-			padding: 20px;
-		}
-		nav ul {
-            		list-style-type: none;
-            		padding: 0;
-      		}
-      		nav ul li {
-            		display: inline;
-           		margin-right: 20px;
-		}
-		main {
-           		padding: 20px;
-      		}
-		
-	</style>
+	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
@@ -37,9 +13,9 @@
 
 		<nav>
             <ul>
-                <li><a href="index.html"style="color: blue;">Homepage</a></li>
-                <li><a href="Gallery.html"style="color: blue;">Gallery</a></li>
-                <li><a href="Blog.html"style="color: blue;">Blog</a></li>
+                <li><a href="index.html">Homepage</a></li>
+                <li><a href="Gallery.html">Gallery</a></li>
+                <li><a href="Blog.html">Blog</a></li>
             </ul>
         </nav>
 	</header>
@@ -51,6 +27,25 @@
 		<br>
 		<p>My Telp No.</p>
 		<p>082290826772</p>
+		<br>
+		<p>My location</p>
+		<p>Manado, Sulawesi Utara</p>
+		<h2 style="position:relative; left:800px; bottom:300px;">Kirim Pesan</h2>
+			<form action="send_email.php" method="post">
+				<label for="name">Nama:</label><br>
+				<input type="text" id="name" name="name" required><br>
+		
+				<label for="email">Email:</label><br>
+				<input type="email" id="email" name="email" required><br>
+		
+				<label for="subject">Subjek:</label><br>
+				<input type="text" id="subject" name="subject" required><br>
+		
+				<label for="message">Pesan:</label><br>
+				<textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
+		
+				<input type="submit" value="Kirim">
+			</form>
 	</main>
 
 </body>
