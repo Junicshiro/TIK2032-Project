@@ -5,7 +5,18 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Blog</title>
 	<link rel="stylesheet" href="styles.css">
-	
+	<style>
+		main{
+			display: flex; gap:20px;
+		}
+		@media screen and (max-width:600px){
+        	main{
+            	display:flex;
+            	flex-direction:column;
+            	justify-content: center;
+			}
+        }
+	</style>
 </head>
 <body>
 
@@ -21,7 +32,7 @@
         </nav>
 	</header>
 
-	<main style="display: flex; gap:20px;">
+	<main>
 		<div class="polaroid">
 			<a href="https://news.republika.co.id/berita/sasqa7423/peran-penting-artificial-intellegence-ai-dalam-masa-depan-teknologi">
 			<img src="img/new1.png" style="width:400px;height:200px;">
