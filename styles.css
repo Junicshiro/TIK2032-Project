@@ -62,6 +62,7 @@ form {
       .img {
         display:flex;
         justify-content:space-around;
+        margin-bottom: 20px;
     }
     
     @media screen and (max-width:600px){
@@ -69,7 +70,6 @@ form {
             display:flex;
             flex-direction:column;
             justify-content: center;
-            margin-bottom: 20px;
         }
         div.polaroid {
             width: 35%;
