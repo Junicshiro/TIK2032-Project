@@ -7,31 +7,20 @@ body {
 header {
     background-color: orangered;
 	color: #fff;
-	text-align:center;
+    text-align:center;
 	padding: 20px;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
 	}
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    }
-    nav ul li {
-        display: inline;
-        margin-right: 30px;
-        margin-left: 30px;
-        a:link, a:visited {
-            background-color: orangered;
-            color: black;
-            border: 2px solid black;
-            border-radius: 20;
-            padding: 2px 20px;
-            display: inline-block;
-            }
-          
-          a:hover, a:active {
-            background-color: black;
-            color: white;
-            }
-		}
+
+header div{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+}
+
 main {
 	padding: 20px;
     }
@@ -78,8 +67,44 @@ footer{
     color:white;
     padding: 1px; 
     text-align: center; 
+    position:fixed;
+    bottom:0;
+    left:0;
+    width:100%;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
     position: fixed;
-    left: 0; 
-    bottom: 0; 
-    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(235, 235, 235);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    z-index: 1;
+}
+
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: orangered;
+}
+
+.content {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 16px;
 }

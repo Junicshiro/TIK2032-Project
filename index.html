@@ -5,22 +5,26 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Homepage</title>
 	<link rel="stylesheet" href="styles.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
 
 	<header>
-		<h1>MY PERSONAL HOMEPAGE</h1>
+		<h1>Homepage</h1>
 
-		<nav>
-            <ul>
-                <li><a href="Gallery.html">Gallery</a></li>
-                <li><a href="Blog.html">Blog</a></li>
-                <li><a href="Contact.html">Contact</a></li>
-            </ul>
-        </nav>
+		<div class="sidebar" id="sidebar">
+			<p style = "font-size: 20px; color:black;">Pilihan Menu:</p>
+			<a href="Gallery.html">Gallery</a>
+			<a href="Blog.html">Blog</a>
+			<a href="Contact.html">Contact</a>
+		</div>
+		
+		<div class="content">
+			<button style="font-size:24px" onclick=" toggleSidebar()"><i class="material-icons">menu</i></button>
+		</div>
 	</header>
 
-	<main>
+	<main style = "padding-top:130px;">
 		<h2>Welcome to My Website</h2>
 		<p>Hello, my name is Junicshiro Alvin Leasiwal and this is my website.</p>
 	</main>
@@ -28,5 +32,7 @@
 	<footer>
 		<h5 style="text-align: center;">© 2024 Junicshiro Leasiwal Web Page.</h5>
 	</footer>
+
+	<script src="script.js"></script>
 </body>
 </html>

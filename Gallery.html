@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Gallery</title>
 	<link rel="stylesheet" href="styles.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	
 </head>
 <body>
@@ -12,15 +13,18 @@
 	<header>
 		<h1>Gallery</h1>
 
-		<nav>
-            <ul>
-               	<li><a href="index.html">Homepage</a></li>
-               	<li><a href="Blog.html">Blog</a></li>
-                <li><a href="Contact.html">Contact</a></li>
-           	</ul>
-        </nav>
+		<div class="sidebar" id="sidebar">
+			<p style = "font-size: 20px; color:black;">Pilihan Menu:</p>
+			<a href="index.html">Homepage</a>
+			<a href="Blog.html">Blog</a>
+			<a href="Contact.html">Contact</a>
+		</div>
+		
+		<div class="content">
+			<button style="font-size:24px" onclick=" toggleSidebar()"><i class="material-icons">menu</i></button>
+		</div>
 	</header>
-	<main>
+	<main style = "padding-top:150px;">
 		<div class="img">
 			<img style="border-radius: 8px;" src="img/pngtree-mountain-river-beautiful-nature-image_15576058.jpg" width="400px";height="400px";>
 			<img style="border-radius: 8px;" src="img/images%20(1).jfif" width="400px";height="400px";>
@@ -32,5 +36,6 @@
 		<h5 style="text-align: center;">© 2024 Junicshiro Leasiwal Web Page.</h5>
 	</footer>
 
+	<script src="script.js"></script>
 </body>
 </html>

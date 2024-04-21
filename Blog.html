@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Blog</title>
 	<link rel="stylesheet" href="styles.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<style>
 		main{
 			display: flex; gap:20px;
@@ -23,16 +24,20 @@
 	<header>
 		<h1>Blog</h1>
 
-		<nav>
-            <ul>
-                <li><a href="index.html">Homepage</a></li>
-                <li><a href="Gallery.html">Gallery</a></li>
-                <li><a href="Contact.html">Contact</a></li>
-            </ul>
-        </nav>
+		<div class="sidebar" id="sidebar">
+			<p style = "font-size: 20px; color:black;">Pilihan Menu:</p>
+			<a href="index.html">Homepage</a>
+			<a href="Gallery.html">Gallery</a>
+			<a href="Contact.html">Contact</a>
+		</div>
+		
+		<div class="content">
+			<button style="font-size:24px" onclick=" toggleSidebar()"><i class="material-icons">menu</i></button>
+		</div>
+
 	</header>
 
-	<main>
+	<main style = "padding-top:150px;">
 		<div class="polaroid">
 			<a href="https://news.republika.co.id/berita/sasqa7423/peran-penting-artificial-intellegence-ai-dalam-masa-depan-teknologi">
 			<img src="img/new1.png" style="width:400px;height:200px;">
@@ -65,5 +70,6 @@
 		<h5 style="text-align: center;">© 2024 Junicshiro Leasiwal Web Page.</h5>
 	</footer>
 	
+	<script src="script.js"></script>
 </body>
 </html>

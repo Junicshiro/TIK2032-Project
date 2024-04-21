@@ -5,22 +5,24 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Contact</title>
 	<link rel="stylesheet" href="styles.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
 
 	<header>
 		<h1>Contact</h1>
 
-		<nav>
-            <ul>
-                <li><a href="index.html">Homepage</a></li>
-                <li><a href="Gallery.html">Gallery</a></li>
-                <li><a href="Blog.html">Blog</a></li>
-            </ul>
-        </nav>
+		<div class="sidebar" id="sidebar">
+			<p style = "font-size: 20px; color:black;">Pilihan Menu:</p>
+			<a href="index.html">Homepage</a>
+			<a href="Gallery.html">Gallery</a>
+			<a href="Blog.html">Blog</a>
+		<div class="content">
+			<button style="font-size:24px" onclick=" toggleSidebar()"><i class="material-icons">menu</i></button>
+		</div>
 	</header>
 
-	<main>
+	<main style = "padding-top:130px; padding-bottom: 100px;">
 		<h2>My Contact :</h2>
 		<p>My Email</p>
 		<p><a href="mailto:junicshiroleasiwal026@student.unsrat.ac.id">junicshiroleasiwal026@student.unsrat.ac.id</a></p>
@@ -52,5 +54,6 @@
 		<h5 style="text-align: center;">© 2024 Junicshiro Leasiwal Web Page.</h5>
 	</footer>
 
+	<script src="script.js"></script>
 </body>
 </html>
