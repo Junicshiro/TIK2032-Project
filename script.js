@@ -10,3 +10,11 @@ function toggleSidebar() {
         content.style.marginLeft = "250px";
     }
 }
+
+function mouseover(x) {
+    x.style.background = "yellow";
+  }
+
+function mouseout(x) {
+    x.style.background = "white";
+  }
