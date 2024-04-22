@@ -69,7 +69,6 @@ footer{
     text-align: center; 
     position:fixed;
     bottom:0;
-    left:0;
     width:100%;
 }
 
@@ -82,8 +81,13 @@ footer{
     background-color: rgb(235, 235, 235);
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 60px;
+    padding-top: 0px;
     z-index: 1;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: none;
+    border-color:black;
 }
 
 .sidebar a {
@@ -107,4 +111,17 @@ footer{
 button {
     padding: 10px 15px;
     font-size: 16px;
+}
+
+header div p{
+    font-size: 20px;
+    color:black;
+    background-color: orangered;
+    padding:20px;
+    margin-top: 0;
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: solid;
+    border-left-style: none;
+    border-color:black;
 }
