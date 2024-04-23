@@ -18,3 +18,23 @@ function mouseover(x) {
 function mouseout(x) {
     x.style.background = "white";
   }
+
+function toggleFullScreen(image) {
+            if (!document.fullscreenElement) {
+                // Masuk ke mode fullscreen
+                image.requestFullscreen();
+            } else {
+                // Keluar dari mode fullscreen
+                if (document.exitFullscreen) {
+                    document.exitFullscreen();
+                }
+            }
+        }
+
+function mouseover2(gmbr) {
+    gmbr.style.transform = "scale(1.1)";
+}
+        
+function mouseout2(gmbr) {
+    gmbr.style.transform = "scale(1)";
+}

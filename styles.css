@@ -13,6 +13,7 @@ header {
     top:0;
     left:0;
     width:100%;
+    z-index:10;
 	}
 
 header div{
@@ -48,19 +49,12 @@ a:active{
 	  }
 
       .img {
-        display:flex;
-        justify-content:space-around;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     
-    @media screen and (max-width:600px){
-        .img{
-            display:flex;
-            flex-direction:column;
-            justify-content: center;
-            margin-bottom: 20px;
-        }
-    
-    }
 
 footer{
     background-color: orangered;
