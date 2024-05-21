@@ -2,18 +2,15 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: rgb(249, 208, 194);
+    background-color: #ecf0f1;
+    color: #2c3e50;
 	}
 header {
-    background-color: orangered;
+    background-color: #3498db;
 	color: #fff;
     text-align:center;
 	padding: 20px;
-    position:fixed;
-    top:0;
-    left:0;
     width:100%;
-    z-index:10;
 	}
 
 header div{
@@ -31,7 +28,7 @@ a {
     text-decoration: none;
     }
 a:hover {
-    color:green;
+    color:#e74c3c;
     }
 a:active{
     color:blue;
@@ -57,13 +54,10 @@ a:active{
     
 
 footer{
-    background-color: orangered;
+    background-color: #3498db;
     color:white;
     padding: 1px; 
     text-align: center; 
-    position:fixed;
-    bottom:0;
-    width:100%;
 }
 
 .sidebar {
@@ -94,7 +88,7 @@ footer{
 }
 
 .sidebar a:hover {
-    color: orangered;
+    color: #e74c3c;
 }
 
 .content {
@@ -110,7 +104,7 @@ button {
 header div p{
     font-size: 20px;
     color:black;
-    background-color: orangered;
+    background-color: #2c3e50;
     padding:20px;
     margin-top: 0;
     border-top-style: none;

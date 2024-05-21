@@ -7,16 +7,36 @@
 	<link rel="stylesheet" href="styles.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<style>
-		main{
-			display: flex; gap:20px;
+		main {
+			display: flex;
+			flex-wrap: wrap; 
+			gap: 20px;
+			justify-content: center; 
 		}
-		@media screen and (max-width:600px){
-        	main{
-            	display:flex;
-            	flex-direction:column;
-            	justify-content: center;
+		.polaroid {
+			width: calc(33.333% - 40px); 
+			background-color: white;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+			margin-bottom: 25px;
+		}
+		.polaroid img {
+			width: 100%; 
+			height: auto;
+		}
+		@media screen and (max-width: 900px) {
+			.polaroid {
+				width: calc(50% - 40px); 
 			}
-        }
+		}
+		@media screen and (max-width: 600px) {
+			main {
+				flex-direction: column;
+				align-items: center;
+			}
+			.polaroid {
+				width: 80%; 
+			}
+		}
 	</style>
 </head>
 <body>
@@ -37,31 +57,40 @@
 
 	</header>
 
-	<main style = "padding-top:150px;">
+	<main>
 		<div class="polaroid">
-			<a href="https://news.republika.co.id/berita/sasqa7423/peran-penting-artificial-intellegence-ai-dalam-masa-depan-teknologi">
-			<img src="img/new1.png" style="width:400px;height:200px;">
-			<div class="container">
-			<h3>Peran Penting Artificial Intellegence (AI) dalam Masa Depan Teknologi | Republika Online</h3>
-			</a>
+			<a href="http://localhost/pemograman_web/artikel.php?id=1">
+				<img src="img/gmbr1.jpg" alt="Pentingnya Pola Tidur yang Sehat">
+				<div class="container">
+					<h3>Pentingnya Pola Tidur yang Sehat</h3>
+				</a>
 			</div>
 		</div>
 		
 		<div class="polaroid">
-			<a href="https://www.suaramuhammadiyah.id/read/simfoni-religi-sma-muhi-tampilkan-talenta-seni-berprestasi">
-			<img src="img/new3.jpg" style="width:400px;height:200px;">
-			<div class="container">
-			<h3>Simfoni Religi SMA Muhi Tampilkan Talenta Seni Berprestasi</h3>
-			</a>
+			<a href="http://localhost/pemograman_web/artikel.php?id=2">
+				<img src="img/gmbr2.jpg" alt="Pentingnya Olahraga untuk Kesehatan Optimal">
+				<div class="container">
+					<h3>Pentingnya Olahraga untuk Kesehatan Optimal</h3>
+				</a>
 			</div>
 		</div>
 		
 		<div class="polaroid">
-			<a href="https://www.cnnindonesia.com/olahraga/20240324204527-178-1078426/smes-megawati-bikin-ratu-voli-korea-terjengkang">
-			<img src="img/new2.jpeg" style="width:400px;height:200px;">
-			<div class="container">
-			<h3>Smes Megawati Bikin Ratu Voli Korea Terjengkang</h3>
-			</a>
+			<a href="http://localhost/pemograman_web/artikel.php?id=3">
+				<img src="img/gmbr3.jpg" alt="Penemuan Spesies Anggrek Baru di Hutan Hujan Amazon">
+				<div class="container">
+					<h3>Penemuan Spesies Anggrek Baru di Hutan Hujan Amazon</h3>
+				</a>
+			</div>
+		</div>
+
+		<div class="polaroid">
+			<a href="http://localhost/pemograman_web/artikel.php?id=4">
+				<img src="img/gmbr4.jpg" alt="Cara Mitigasi Bencana Gempa Bumi dan Tsunami">
+				<div class="container">
+					<h3>Cara Mitigasi Bencana Gempa Bumi dan Tsunami</h3>
+				</a>
 			</div>
 		</div>
 	</main>
